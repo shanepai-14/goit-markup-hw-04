@@ -206,7 +206,7 @@ body {
   gap: 16px;
   align-items: flex-end;
 }
-.socmed-p {
+.footer-social .socmed-p {
   margin: 0 0 16px 0;
   color: #ffffff;
   font-weight: 500;
