@@ -9,6 +9,7 @@
   --team-color: #f4f4fd;
   --btn-color: #4d5ae5;
   --icon-color: #8e8f99;
+  --icon-green: #31d0aa;
 }
 * {
   margin: 0 auto;
@@ -174,7 +175,12 @@ body {
   margin-bottom: 16px;
 }
 .footer .container {
-  display: block;
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo {
+  margin: 0;
+  margin-right: 120px;
 }
 
 .footer p {
@@ -187,6 +193,44 @@ body {
   font-weight: 400;
   font-style: normal;
   margin-left: 0;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.socmed-footer {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+.socmed-p {
+  margin: 0 0 16px 0;
+  color: #ffffff;
+  font-weight: 500;
+}
+.socmed-footer-list {
+  width: 40px;
+  height: 40px;
+}
+.socmed-footer-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--btn-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.socmed-footer-link:hover,
+.socmed-footer-link:focus {
+  background-color: var(--icon-green);
+}
+.footer-icons {
+  fill: var(--team-color);
 }
 .port-btn {
   font-family: var(--main-font);
@@ -374,7 +418,7 @@ img {
 .sec-four-icons {
   fill: var(--team-color);
 }
-.social-link svg{
+.social-link svg {
   fill: var(--team-color);
 }
 .section-five {
